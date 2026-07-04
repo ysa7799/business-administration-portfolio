@@ -1,62 +1,202 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yusuf Hakeem — Business Administration & Operations</title>
 <meta name="description" content="Yusuf Hakeem — Bahrain-based business administration & operations professional. SOPs, process improvement, reporting. BBA, 10+ years operations.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231E2761'/%3E%3Ctext x='50' y='68' font-size='54' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EY%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css">
-</head><body>
-<header class="hero">
-  <div class="wrap">
-    <div class="mono">YH</div>
-    <p class="kicker">Business Administration & Operations · Manama, Bahrain</p>
-    <h1>Yusuf Hakeem</h1>
-    <p class="lead">BBA with 10+ years of operations experience — records, reporting, compliance, and coordination. I turn how-work-actually-gets-done into clear procedures and measured improvements. In-country, no visa sponsorship needed, available immediately.</p>
-    <div class="cta">
-      <a class="btn primary" href="https://github.com/ysa7799/business-administration-portfolio" target="_blank" rel="noopener">View work on GitHub</a>
-      <a class="btn ghost" href="mailto:yusuf.hakeem.bh@gmail.com">Email me</a>
-      <a class="btn ghost" href="https://yusufhakeem.app" target="_blank" rel="noopener">Data portfolio</a>
-    </div>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23c8a24a'/%3E%3Ctext x='50' y='70' font-size='56' text-anchor='middle' fill='%230a1024' font-family='Arial' font-weight='bold'%3EY%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#080b16; --card:rgba(255,255,255,.04); --line:rgba(255,255,255,.10);
+  --ink:#eef1f8; --muted:#9aa3b8; --a1:#d9b25a; --a2:#4f7cf0; --a3:#e7c46e;
+  --grad:linear-gradient(120deg,#e7c46e,#c8a24a 45%,#4f7cf0);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+::selection{background:var(--a1);color:#0a1024}
+h1,h2,h3,.mono{font-family:'Space Grotesk',sans-serif}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.aurora{position:fixed;inset:0;z-index:-2;overflow:hidden;background:radial-gradient(1200px 600px at 82% -10%,rgba(79,124,240,.18),transparent 60%),radial-gradient(900px 500px at 0% 18%,rgba(217,178,90,.14),transparent 60%),var(--bg)}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.42;animation:float 20s ease-in-out infinite}
+.b1{width:520px;height:520px;background:#c8a24a;top:-120px;right:-80px}
+.b2{width:460px;height:460px;background:#4f7cf0;bottom:-140px;left:-100px;animation-delay:-7s}
+.b3{width:360px;height:360px;background:#e7c46e;top:42%;left:56%;animation-delay:-13s}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(38px,-28px) scale(1.08)}66%{transform:translate(-28px,24px) scale(.96)}}
+.grid-overlay{position:fixed;inset:0;z-index:-1;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000,transparent 75%);mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000,transparent 75%);opacity:.3}
+.spot{position:fixed;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(217,178,90,.10),transparent 65%);pointer-events:none;z-index:0;transform:translate(-50%,-50%);transition:opacity .3s;opacity:0}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(14px);background:rgba(8,11,22,.55);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-family:'Space Grotesk'}
+.logo .mk{width:32px;height:32px;border-radius:9px;background:var(--grad);color:#0a1024;display:grid;place-items:center;font-weight:700}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{color:var(--muted);font-size:14px;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{padding:8px 16px;border-radius:10px;background:var(--grad);color:#0a1024!important;font-weight:600}
+@media(max-width:680px){.nav-links a:not(.nav-cta){display:none}}
+header{min-height:100vh;display:flex;align-items:center;position:relative;padding:100px 0 60px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);font-size:13px;color:var(--muted);font-weight:500}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--a1);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(217,178,90,.5)}70%{box-shadow:0 0 0 10px rgba(217,178,90,0)}100%{box-shadow:0 0 0 0 rgba(217,178,90,0)}}
+.hero-kick{margin-top:26px;color:var(--a1);font-weight:600;letter-spacing:3px;text-transform:uppercase;font-size:13px}
+header h1{font-size:clamp(48px,9vw,104px);line-height:.98;letter-spacing:-2px;margin:10px 0 8px;background:linear-gradient(180deg,#fff,#aab3c6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font-size:clamp(20px,3.4vw,32px);font-weight:600;font-family:'Space Grotesk'}
+.role .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:640px;color:var(--muted);font-size:18px;margin:22px 0 30px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{padding:14px 26px;border-radius:12px;font-weight:600;font-size:15px;transition:transform .2s,box-shadow .2s;display:inline-flex;align-items:center;gap:9px;border:1px solid transparent}
+.btn.primary{background:var(--grad);color:#0a1024;box-shadow:0 8px 30px rgba(217,178,90,.22)}
+.btn.primary:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(79,124,240,.35)}
+.btn.ghost{background:var(--card);border-color:var(--line);color:var(--ink)}
+.btn.ghost:hover{transform:translateY(-3px);border-color:var(--a1)}
+.scrollcue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);color:var(--muted);font-size:12px;letter-spacing:2px;text-transform:uppercase;animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+.marquee{border-block:1px solid var(--line);background:rgba(255,255,255,.02);overflow:hidden;white-space:nowrap;padding:16px 0}
+.marquee .track{display:inline-flex;gap:44px;animation:scroll 24s linear infinite;font-family:'Space Grotesk';font-weight:600;color:var(--muted);font-size:15px}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+section{padding:92px 0;position:relative;z-index:1}
+.eyebrow{color:var(--a1);font-weight:600;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-bottom:10px}
+.h2{font-size:clamp(30px,5vw,46px);letter-spacing:-1px;margin-bottom:14px}
+.sub{color:var(--muted);max-width:580px;margin-bottom:44px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.stat{padding:26px 22px;border:1px solid var(--line);border-radius:18px;background:var(--card)}
+.stat .n{font-family:'Space Grotesk';font-size:44px;font-weight:700;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .l{color:var(--muted);font-size:14px;margin-top:4px}
+@media(max-width:680px){.stats{grid-template-columns:repeat(2,1fr)}}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px}
+.card{position:relative;padding:32px;border:1px solid var(--line);border-radius:20px;background:var(--card);overflow:hidden;transition:transform .3s,border-color .3s}
+.card::before{content:"";position:absolute;inset:0;border-radius:20px;padding:1px;background:var(--grad);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .3s}
+.card:hover{transform:translateY(-8px)}
+.card:hover::before{opacity:1}
+.card .num{font-family:'Space Grotesk';font-size:14px;color:var(--muted)}
+.tag{display:inline-block;font-size:12px;font-weight:600;color:var(--a1);border:1px solid var(--line);padding:5px 12px;border-radius:999px;margin:14px 0 16px}
+.card h3{font-size:24px;letter-spacing:-.5px;margin-bottom:10px}
+.card p{color:var(--muted);font-size:15px}
+.card .metric{margin-top:16px;font-family:'Space Grotesk';font-weight:700;font-size:15px;color:var(--a1)}
+.card .links{margin-top:18px;display:flex;gap:18px}
+.card .links a{color:var(--a1);font-weight:600;font-size:14px}
+.card .links a:hover{text-decoration:underline}
+.chips{display:flex;flex-wrap:wrap;gap:12px}
+.chip{padding:11px 18px;border:1px solid var(--line);border-radius:12px;background:var(--card);font-family:'Space Grotesk';font-weight:500;font-size:15px;transition:transform .2s,border-color .2s,color .2s}
+.chip:hover{transform:translateY(-4px);border-color:var(--a1);color:var(--a1)}
+.band{border:1px solid var(--line);border-radius:26px;background:linear-gradient(135deg,rgba(217,178,90,.09),rgba(79,124,240,.09));padding:56px 40px;text-align:center;position:relative;overflow:hidden}
+.band h2{font-size:clamp(28px,5vw,44px);letter-spacing:-1px;margin-bottom:14px}
+.band p{color:var(--muted);margin-bottom:26px}
+footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer a{color:var(--muted);transition:color .2s}
+footer a:hover{color:var(--a1)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<div class="aurora"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+<div class="grid-overlay"></div>
+<div class="spot" id="spot"></div>
+
+<nav><div class="wrap">
+  <a class="logo" href="#top"><span class="mk">Y</span> Yusuf Hakeem</a>
+  <div class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#skills">Competencies</a>
+    <a href="#contact">Contact</a>
+    <a class="nav-cta" href="https://github.com/ysa7799/business-administration-portfolio" target="_blank" rel="noopener">GitHub</a>
   </div>
+</div></nav>
+
+<header id="top"><div class="wrap">
+  <span class="pill"><span class="dot"></span> Available for work · Manama, Bahrain · No sponsorship needed</span>
+  <p class="hero-kick">Business Administration &amp; Operations</p>
+  <h1>Yusuf Hakeem</h1>
+  <p class="role">I turn how work gets done into <span class="g">clear systems &amp; results.</span></p>
+  <p class="lead">BBA with 10+ years of operations experience — records, reporting, compliance, and coordination. I document processes, tighten workflows, and prove the improvement with numbers.</p>
+  <div class="cta">
+    <a class="btn primary" href="#work">See my work →</a>
+    <a class="btn ghost" href="mailto:yusuf.hakeem.bh@gmail.com">Email me</a>
+    <a class="btn ghost" href="https://yusufhakeem.app" target="_blank" rel="noopener">Data portfolio ↗</a>
+  </div>
+</div>
+<div class="scrollcue">Scroll ↓</div>
 </header>
 
-<main class="wrap">
-  <section>
-    <h2>Work samples</h2>
-    <div class="grid">
-      <article class="card">
-        <span class="tag">Operations · Documentation</span>
-        <h3>Shift Handover & Escalation SOP</h3>
-        <p>A professional Standard Operating Procedure: consistent shift handovers, a severity-based incident escalation matrix (S1–S4), and audit-ready record retention. The kind of governance document operations and admin teams rely on.</p>
-        <div class="links">
-          <a href="https://github.com/ysa7799/business-administration-portfolio/tree/main/shift-handover-sop" target="_blank" rel="noopener">Document &rarr;</a>
-          <a href="https://github.com/ysa7799/business-administration-portfolio/blob/main/shift-handover-sop/Shift_Handover_SOP.pptx" target="_blank" rel="noopener">Slides &rarr;</a>
-        </div>
-      </article>
-      <article class="card">
-        <span class="tag">Process Improvement</span>
-        <h3>Cutting Shift-Report Turnaround</h3>
-        <p>A before/after case study: removing a duplicate capture step and assigning clear ownership cut report turnaround ~60% (≈90→35 min) with same-shift visibility — at no software cost. Includes a RACI matrix and KPI workbook.</p>
-        <div class="links">
-          <a href="https://github.com/ysa7799/business-administration-portfolio/tree/main/operations-process-improvement" target="_blank" rel="noopener">Case study &rarr;</a>
-          <a href="https://github.com/ysa7799/business-administration-portfolio/blob/main/operations-process-improvement/Process_Improvement_Case_Study.pptx" target="_blank" rel="noopener">Slides &rarr;</a>
-        </div>
-      </article>
-    </div>
-  </section>
+<div class="marquee"><div class="track">
+  <span>Operations</span><span>SOPs</span><span>Process Improvement</span><span>Compliance</span><span>Reporting</span><span>RACI</span><span>KPIs</span><span>Records Management</span><span>Coordination</span><span>Audit Readiness</span>
+  <span>Operations</span><span>SOPs</span><span>Process Improvement</span><span>Compliance</span><span>Reporting</span><span>RACI</span><span>KPIs</span><span>Records Management</span><span>Coordination</span><span>Audit Readiness</span>
+</div></div>
 
-  <section>
-    <h2>Core competencies</h2>
-    <div class="chips">
-      <span>Operations & Administration</span><span>Records Management</span><span>Process Documentation</span>
-      <span>SOPs</span><span>Compliance & Audit Readiness</span><span>KPI Reporting</span>
-      <span>RACI / Ownership</span><span>Excel & Power BI</span><span>Stakeholder Communication</span>
+<section id="stats"><div class="wrap reveal">
+  <div class="stats">
+    <div class="stat"><div class="n" data-count="10" data-suffix="+">0</div><div class="l">Years in operations</div></div>
+    <div class="stat"><div class="n" data-count="60" data-suffix="%">0</div><div class="l">Report turnaround cut</div></div>
+    <div class="stat"><div class="n" data-count="4">0</div><div class="l">Escalation tiers designed</div></div>
+    <div class="stat"><div class="n" data-count="0" data-suffix=" BHD">0</div><div class="l">Software cost to improve</div></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <div class="reveal"><p class="eyebrow">Work samples</p><h2 class="h2">Systems that reduce errors and delay</h2>
+  <p class="sub">Real operations deliverables — a governance procedure and a measured process-improvement case study. Full documents and slide decks on GitHub.</p></div>
+  <div class="cards">
+    <article class="card reveal">
+      <div class="num">01</div><span class="tag">Operations · Documentation</span>
+      <h3>Shift Handover &amp; Escalation SOP</h3>
+      <p>A professional Standard Operating Procedure: consistent shift handovers, a severity-based incident escalation matrix (S1–S4), and audit-ready record retention — the kind of governance document operations and admin teams rely on.</p>
+      <div class="metric">4 severity tiers · 12-month retention · audit-ready</div>
+      <div class="links"><a href="https://github.com/ysa7799/business-administration-portfolio/tree/main/shift-handover-sop" target="_blank" rel="noopener">Document →</a><a href="https://github.com/ysa7799/business-administration-portfolio/blob/main/shift-handover-sop/Shift_Handover_SOP.pptx" target="_blank" rel="noopener">Slides →</a></div>
+    </article>
+    <article class="card reveal">
+      <div class="num">02</div><span class="tag">Process Improvement</span>
+      <h3>Cutting Shift-Report Turnaround</h3>
+      <p>A before/after case study: removing a duplicate capture step and assigning clear ownership cut report turnaround roughly 60% (≈90 → 35 min) and moved management visibility from next-day to same-shift — at no software cost. Includes a RACI matrix and KPI workbook.</p>
+      <div class="metric">~60% faster · same-shift visibility · $0 tooling</div>
+      <div class="links"><a href="https://github.com/ysa7799/business-administration-portfolio/tree/main/operations-process-improvement" target="_blank" rel="noopener">Case study →</a><a href="https://github.com/ysa7799/business-administration-portfolio/blob/main/operations-process-improvement/Process_Improvement_Case_Study.pptx" target="_blank" rel="noopener">Slides →</a></div>
+    </article>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <div class="reveal"><p class="eyebrow">Core competencies</p><h2 class="h2">What I bring to an operations team</h2>
+  <p class="sub">A BBA foundation plus a decade of doing the work — accurate, reliable, and improvement-minded.</p></div>
+  <div class="chips reveal">
+    <span class="chip">Operations &amp; Administration</span><span class="chip">Records Management</span><span class="chip">Process Documentation</span>
+    <span class="chip">SOP Authoring</span><span class="chip">Compliance &amp; Audit Readiness</span><span class="chip">KPI Reporting</span>
+    <span class="chip">RACI / Ownership</span><span class="chip">Excel &amp; Power BI</span><span class="chip">Stakeholder Communication</span><span class="chip">Coordination</span>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap reveal">
+  <div class="band">
+    <h2>Let's make operations run smoother.</h2>
+    <p>Open to operations, administration, coordination, and reporting roles in Bahrain — in-country, ready to start immediately.</p>
+    <div class="cta" style="justify-content:center">
+      <a class="btn primary" href="mailto:yusuf.hakeem.bh@gmail.com">yusuf.hakeem.bh@gmail.com</a>
+      <a class="btn ghost" href="https://github.com/ysa7799/business-administration-portfolio" target="_blank" rel="noopener">See the work ↗</a>
     </div>
-  </section>
-</main>
+  </div>
+</div></section>
 
 <footer><div class="wrap">
-  <p>Yusuf Hakeem · Manama, Bahrain · <a href="mailto:yusuf.hakeem.bh@gmail.com">yusuf.hakeem.bh@gmail.com</a> · +973 6666 9795</p>
-  <p><a href="https://github.com/ysa7799" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/yusuf-hakeem-bh/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://yusufhakeem.app" target="_blank" rel="noopener">Data Analyst portfolio</a></p>
+  <span>© <span id="yr"></span> Yusuf Hakeem · Manama, Bahrain</span>
+  <span><a href="https://github.com/ysa7799" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/yusuf-hakeem-bh/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://yusufhakeem.app" target="_blank" rel="noopener">Data portfolio</a> · +973 6666 9795</span>
 </div></footer>
-</body></html>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+function animate(el){const t=+el.dataset.count,suf=el.dataset.suffix||'';let st=performance.now(),d=1400;
+  function step(now){let p=Math.min((now-st)/d,1);p=1-Math.pow(1-p,3);el.textContent=Math.round(t*p)+suf;if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step)}
+const cio=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){animate(e.target);cio.unobserve(e.target)}}),{threshold:.6});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+const spot=document.getElementById('spot');
+window.addEventListener('mousemove',e=>{spot.style.opacity=1;spot.style.left=e.clientX+'px';spot.style.top=e.clientY+'px'});
+window.addEventListener('mouseout',()=>spot.style.opacity=0);
+</script>
+</body>
+</html>
